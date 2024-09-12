@@ -1,0 +1,73 @@
+---
+
+---
+
+<header>
+    <nav>
+        <ul>
+            <li class="logo"> <img src="../../public/Assets/favicon.svg"></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style lang="scss">
+
+    header {
+        // Header Background
+        background-color: rgb(17, 0, 75);
+        padding: 1rem;
+        margin : auto;
+        //NAV
+        & nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & nav ul li{
+            background-color: rgb(4, 0, 18);
+            margin:20px;
+            padding : 10px;
+
+            // Borders
+            border: 2px solid transparent;
+            border-radius: 15px;
+            
+            // Animation
+            transform: scale(1);
+            transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        & nav ul li:hover {
+            border-color: blueviolet;
+            transform: scale(1.1);
+        }
+        & nav ul li.logo{
+            background:transparent;
+
+        }
+        & nav ul li.logo img {
+            height: 120px;
+        }
+        & nav ul li.logo:hover{
+            border-color: transparent;
+        }
+
+        & nav ul li a{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            text-decoration: none;
+            padding : 10px;
+            
+        }
+        & nav ul li::marker {
+            content:"";
+
+        }
+    }
+
+</style>
