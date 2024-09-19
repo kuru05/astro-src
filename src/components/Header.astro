@@ -1,0 +1,39 @@
+---
+interface Props {
+// Header Titles
+
+	title2: string;
+	title3: string;
+	title4: string;
+
+// Redirections
+
+
+
+}
+
+const { title2, title3, title4} = Astro.props;
+---
+
+<header>
+
+    <nav>
+        <ul>
+            <li class="logo" > <a href="/index.html"><img src="/home.png" alt="Home" /></a> </li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- <nav class="header">
+        <ul>
+            <li><a href="#MonParcours">{title2}</a></li>
+            <li><a href="#MonProjet">{title3}</a></li>
+            <li><a href="#MeContacter">{title4}</a></li>
+
+        </ul>
+    </nav> -->
+</header>
+
+
+
+
